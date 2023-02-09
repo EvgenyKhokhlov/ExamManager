@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ExaminationManager</class>
+ <widget class="QWidget" name="ExaminationManager">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>9</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="verticalFrame">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>39</y>
+     <width>361</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout"/>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_pictureAddress">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>313</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>280</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Enter picture address</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_addPicture">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>310</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add Picture</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>40</y>
+     <width>531</width>
+     <height>241</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>280</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Enter question text</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_prevQuestion">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>700</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Previouse Question</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_nextQuestion">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>700</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Next Question</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>360</y>
+     <width>911</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="AnswersLayout"/>
+  </widget>
+  <widget class="QPushButton" name="pushButton_textAnswer">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>370</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text Answer</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>310</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Choose answers type:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_checkBoxAnswers">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>460</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CheckBox Answers</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_radioButAnswers">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>560</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>RadioBut Answers</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_questionNumber">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>0</y>
+     <width>281</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Question № 1</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_checkBoxAnswers">
+   <property name="geometry">
+    <rect>
+     <x>1110</x>
+     <y>470</y>
+     <width>43</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>2</number>
+   </property>
+   <property name="maximum">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_radioButAnswers">
+   <property name="geometry">
+    <rect>
+     <x>1110</x>
+     <y>570</y>
+     <width>43</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>2</number>
+   </property>
+   <property name="maximum">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_saveExamination">
+   <property name="geometry">
+    <rect>
+     <x>1000</x>
+     <y>630</y>
+     <width>161</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Save Examination</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_showScore">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>180</y>
+     <width>201</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Show Score</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>105</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Score Required</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_scoreRequired">
+   <property name="geometry">
+    <rect>
+     <x>1080</x>
+     <y>110</y>
+     <width>81</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_questionScore">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>700</y>
+     <width>43</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>700</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Question Score</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>980</x>
+     <y>60</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Examination Settings:</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
