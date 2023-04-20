@@ -25,6 +25,9 @@ QuestionBase *Examination::loadQuestion(int id)
 
 void Examination::saveExamination(QString examName, float score, bool isShow)
 {
+    if(!QDir("examinations").exists())
+        QDir().mkdir("examinations");
+    
     QString address = "examinations/" + examName + ".json";
     QFile file(address);
 
